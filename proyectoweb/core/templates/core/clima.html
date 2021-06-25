@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Ayuda a un peludo </title>
+        <meta name"viewport" content="width=device-width, initial-scale=1">
+        
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/estilos.css">
+
+    </head>
+    <body>
+        <div class="container" >
+            <div class="row">
+                <div class="col-12" align="center">
+                    <img src="img/logo.jpg" width="100px"/>
+                </div>
+            </div>
+            <div class="row fondoceleste">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item col-3">
+                    <a class="nav-link active letrascolor" href="#!">Inicio</a>
+                    </li>
+                    <li class="nav-item col-3">
+                    <a class="nav-link letrascolor" href="#!">Adoptar</a>
+                    </li>
+                    <li class="nav-item col-1">
+                    <a class="nav-link letrascolor" href="clima.js">Clima</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="row margenTop10">
+                <h1>Ver como está el clima </h1>
+                <form>
+                    <div class="form-group">        
+                      <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ingresar Ciudad">
+                    </div>
+                    <button id="consultaClima" type="button" class="btn btn-primary margenTop10" onclick="cargar_clima()">consultar clima</button>
+                </form>
+                <form>
+                    <div id="DatosClima">
+                        <p id="dciudad">La temperatura de <span id="ubicacion"> </span> es : <span id="temp"> </span>° </p>
+                        <p id="dciudad">Humedad relativa <span id="humedad"></span> % Porciento </p>
+                        <p id="dciudad">Velocidad del viento <span id="viento"></span> KM/H </p>
+
+                    </div>
+                </form>
+                  
+
+            </div>
+
+
+
+            <div class="row fondoceleste">
+                <ul class="nav justify-content-center">
+                    <li class="col-1 letrascolor">
+                    <p>Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row separador3"> 
+                <div class="col-12" align="center">
+                    <img class="rounded-circle" src="img/face.png" alt="Circle image" width="50px">
+                    <h5>Facebook/Ayuda A Un Peludo</h5>
+                </div>
+            </div>
+            
+            <div class="row separador3">
+                <div class="col-12" align="center">
+                    <img class="rounded-circle" src="img/insta.png" alt="Circle image" width="50px">
+                    <h5>Instagram/Ayuda_A_Un_Peludo</h5>
+                </div>
+            </div>
+
+            <div class="row separador3">
+                <div class="col-12" align="center">
+                    <img class="rounded-circle" src="img/twitter.png" alt="Circle image" width="50px">
+                    <h5>Facebook/@AyudaAUnPeludo</h5>
+                </div>
+            </div>
+
+            <div class="row separador3">
+                <div class="col-12" align="center">
+                    <img class="rounded-circle" src="img/what.png" alt="Circle image" width="50px">
+                    <h5>+56982469715</h5>
+                </div>
+            </div>
+                  
+
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/miescript.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/clima.js"></script>
+    </body>
+
+</html>
